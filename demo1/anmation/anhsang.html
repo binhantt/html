@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ml-4 relative block overflow-hidden hoverimg">
+        <a href="">
+            <img class="h-full"
+            src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_banner_slider_1.jpg?1705916802667"
+            alt="">
+        </a>
+       
+    </div>
+</body>
+<style>
+       .hoverimg a::before {
+        background:white;
+        opacity: 0.1;
+        content: '';
+        z-index: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        left: -100%;
+        top: -100%;
+    }
+
+    .hoverimg a::after {
+        background:white;
+        opacity: 0.1;
+        content: '';
+        z-index: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        left: 100%;
+        top: 100%;
+    }
+
+    .hoverimg a:hover::before {
+        top: 0;
+        left: 0;
+    }
+    .hoverimg a:hover::after {
+        top: 0;
+        left: 0;
+    }
+</style>
+</html>

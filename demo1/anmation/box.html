@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="px-5 bg-black w-[30%] p-3 rounded-xl love ">
+        <div class="relative">
+            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                alt="">
+                <div class="absolute top-[0] flex justify-between w-full">
+                    <div class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                            <p class="text-white"> 20%</p>
+                    </div>
+                    <div class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                   </div>
+                
+        </div>
+        <div class="text-sm flex flex-col">
+         
+                <div class=" mt-2 hover:text-red-500 font-medium text-white	">
+                    <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                </div >
+                <div class="flex justify-between items-center">
+                <div class="mt-2 w-[70%]">
+                    <p class="text-base	 text-red-500">2000.000 đ</p>
+                    <p class="text-sm line-through text-white">
+                        250.0000 đ
+                    </p>
+                </div>
+                <div class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+              </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('.love').hover(
+    function(){
+        $('.love-1').removeClass('hidden');
+    },
+    function(){
+        $('.love-1').addClass('hidden');
+    }
+)
+</script>
+</html>

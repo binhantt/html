@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="flex justify-center items-center w-full ">
+    <div class=" hoverimg">
+        <a class="" href="">
+            <img class="h-full"
+            src="https://bizweb.dktcdn.net/thumb/large/100/270/860/themes/606449/assets/index_bottom_banner_2.jpg?1705895589400"
+            alt="">
+        </a>
+       
+    </div>
+</div>
+</body>
+<style>
+    .hoverimg{
+        width: 480px;
+        height: 100%;
+        position: relative;
+    }
+    .hoverimg a::before {
+  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+    background-color: transparent;
+    opacity: 0.1;
+    transition: all 0.5s ease-out;
+    height: 200%;
+    width:200%;
+}
+
+    .hoverimg a:hover::before {
+        left: 50%;
+        right: 50%;
+        background-color: white;
+        opacity: 0.1;
+        width:0;
+        height: 200%;
+    }
+   .hoverimg a::after{
+        content: '';
+        position: absolute;
+        top:0%;
+        left: 0;
+        z-index: 0;
+        background-color:transparent;
+        opacity:0.1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+   }
+   .hoverimg a:hover::after{
+        width: 100%;
+        top: 50%;
+        background-color: white;
+        opacity: 0.1;
+        bottom: 50%;
+        height: 0;
+
+   }
+  
+</style>
+</html>
