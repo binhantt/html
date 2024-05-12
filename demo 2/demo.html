@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css"
+        integrity="sha512-+oEiKVGJRHutsibRYkkTIfjI0kspDtgJtkIlyPCNTCFCdhy+nSe25nvrCw7UpHPwNbdmNw9AkgGA+ptQxcjPug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-white font-serif	 w-full	">
+    <div class="flex flex-col w-full ">
+        <div class="flex w-full flex-col w-full ">
+            <div class="flex  w-full  justify-center md:ml-0  absolute z-60 md:mt-0 mt-[8vh]">
+                <div class="flex md:w-[80%] w-full flex-col">
+                    <div class="flex w-full justify-center	text-gray-500 text-[1rem] md:flex hidden ">
+                        <div class="flex w-full  justify-center	 ">
+                            <div class="flex  w-full justify-between py-5 	">
+                                <div class="md:w-[80%] flex ">
+                                    Chào mừng bạn đến với Coffee House !
+                                </div>
+                                <div class="md:w-[20%] flex">
+                                    <div>
+                                        Đăng ký
+                                    </div>
+                                    <div>
+                                        /
+                                    </div>
+                                    <div>
+                                        Đăng nhập
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full ">
+                        <div
+                            class="bg-222722 w-full relative flex  p-4 md:h-[10vh]  h-[10vh]  rounded-3xl  text-gray-300 items-center">
+
+                            <div class="  flex w-full justify-center ">
+                                <div class=" md:flex hidden flex justify-start w-[35%]">
+                                    <div class="p-3">
+                                        <a href="">Trang chủ</a>
+                                    </div>
+                                    <div class="p-3">
+                                        <a href="">Giới thiệu</a>
+                                    </div>
+                                    <div class="p-3 relative">
+                                        <ul class="w-full">
+                                            <li class="flex items-center ">
+                                                <a href="">Sản Phẩm</a>
+                                                <i class="fa-solid fa-caret-down ml-2"></i>
+                                            </li>
+                                            <ul
+                                                class="absolute bg-white bg-222722-shaw p-4 w-[20vh] shaw-md border top-[8.2vh] flex  flex-col ">
+                                                <li class="border-b p-3">
+                                                    demo 1
+                                                </li>
+                                                <li class="border-b p-3">
+                                                    demo 1
+                                                </li>
+                                                <li class="border-b p-3">
+                                                    demo 1
+                                                </li>
+                                                <li class="border-b p-3">
+                                                    demo 1
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute md:top-[-60px] top-[-50px] md:left-[44%]  p-4   rounded-full md:p-5  bg-222722 ">
+                                    <img class=" "
+                                        src="//bizweb.dktcdn.net/100/346/521/themes/894784/assets/logo.png?1676262120822"
+                                        alt="">
+                                </div>
+                                <div class="flex  md:flex hidden w-[40%] justify-end   items-center">
+                                    <div class="p-2">
+                                        <a href="">
+                                            Dịch vụ</a>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="">Tin tức
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="">Liên Hệ</a>
+                                    </div>
+                                    <div class="p-2 flex">
+                                        <div class="mr-4">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-shop"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper w-full absolute -z-10">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper w-full">
+                    <!-- Slides -->
+                    <div class="swiper-slide w-full">
+                        <img class=" md:h-[80vh] w-full"
+                            src=https://bizweb.dktcdn.net/thumb/grande/100/346/521/themes/894784/assets/slider_2.jpg?1676262120822"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide w-full">
+                        <img class=" md:h-[80vh] w-full"
+                            src=https://bizweb.dktcdn.net/thumb/grande/100/346/521/themes/894784/assets/slider_2.jpg?1676262120822"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" w-full md:left-[0] flex flex-col  md:top-[90%] top-[40%] flex justify-center absolute">
+            <div class="w-full flex  ">
+                <div class="flex flex-col w-full items-center  justify-center ">
+                    <div class="md:w-[70%] w-full md:flex-row flex-col flex  justify-between items-center">
+                        <div class="flex flex-col items-center md:w-[40%] ">
+                            <div class="text-yellow-500 text-2xl">
+                                CHÚNG TÔI LÀ
+                            </div>
+                            <div>
+                                Coffee house
+                            </div>
+                            <div class="text-xs flex-col">
+                                <div class="w-full">
+                                    <p class="text-center"> Thứ hai đến Thứ bảy 8:30am - 11:00pm | Hotline: 19006750S
+                                    </p>
+                                </div>
+                                <span class="border-b-2 block border-dotted w-full h-2"></span>
+                            </div>
+                            <div class="text-center mt-3 text-xs">
+                                <p>Chúng tôi đi khắp thế giới để tìm kiếm cà phê tuyệt vời. Trong quá trình đó, chúng
+                                    tôi phát hiện ra những hạt đậu đặc biệt và hiếm đến nỗi chúng tôi có thể chờ đợi để
+                                    mang chúng về.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-[60%]">
+                            <img src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/bg_about.png?1676262120822S"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-full bg-yellow-100 py-6 mt-5">
+                        <div class="text-3xl text-yellow-500">
+                            MENU HÔM NAY
+                        </div>
+                        <div class="text-sx">
+                            Xem menu hôm nay
+                        </div>
+                        <div class="flex p-3  ">
+                            <a class="rounded-2xl	text-white  bg-yellow-500 py-2 px-4 md:mr-6 mr-2">
+                                ca phe
+                            </a>
+                            <a class="rounded-2xl	text-black border-2  py-2 px-4 md:mr-6 mr-2 ">
+                                ca phe
+                            </a>
+                            <a class="rounded-2xl	text-black border-2  py-2 px-4 md:mr-6 mr-2 ">
+                                ca phe
+                            </a>
+                            <a class="rounded-2xl	text-black border-2  py-2 px-4  ">
+                                ca phe
+                            </a>
+                        </div>
+                        <div class="w-full flex flex-col  justify-center md:ml-10">
+                            <div class="flex   justify-center  w-full">
+                                <div class="grid md:grid-cols-2 grid-cols-1 w-[90%]">
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                    <div class="w-full">
+                                        <a class="flex items-center" href="">
+                                            <img class="rounded-full h-[10vh] w-[10vh] "
+                                                src="https://bizweb.dktcdn.net/thumb/small/100/346/521/products/23.jpg?v=1553096884810"
+                                                alt="">
+                                            <b class="w-full text-center"> CA phe trung</b>
+                                            <span class="border-b-2 w-full h-2">
+                                            </span>
+                                            <b class=" text-center w-full">50.000 K</b>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center w-full mt-6">
+                                <a class="border-2 py-3 px-6" href=""> XEM THEM </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full md:flex flex-col items-center justify-center ">
+                <div class="text-yellow-500 text-3xl font-bold py-8 text-center">
+                    HÌNH ẢNH QUÁN CAFE
+                </div>
+                <div class="flex justify-center md:w-[80%] w-full ">
+                    <div class="md:grid md:grid-cols-2 flex flex-col items-center w-full ">
+                        <div class="img-1 relative w-[98%] mt-4">
+                            <img class="img-1-1 w-full"
+                                src="https://bizweb.dktcdn.net/thumb/grande/100/346/521/themes/894784/assets/gallery_big.jpg?1676262120822"
+                                alt="">
+                        </div>
+                        <div class="grid-cols-2 grid w-[98%] md:mt-0 mt-4">
+                            <div>
+                                <img src="https://bizweb.dktcdn.net/thumb/large/100/346/521/themes/894784/assets/gallery_1.jpg?1676262120822"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img src="https://bizweb.dktcdn.net/thumb/large/100/346/521/themes/894784/assets/gallery_1.jpg?1676262120822"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img src="https://bizweb.dktcdn.net/thumb/large/100/346/521/themes/894784/assets/gallery_1.jpg?1676262120822"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img src="https://bizweb.dktcdn.net/thumb/large/100/346/521/themes/894784/assets/gallery_1.jpg?1676262120822"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:flex flex-col items-center justify-center mt-2">
+                <div class="text-yellow-500 text-3xl font-bold py-8 text-center">
+                    KHÁCH HÀNG NÓI GÌ
+                </div>
+                <div class="flex md:w-[80%] w-full h-[50vh] justify-center">
+                    <swiper-container class="mySwiper w-full h-[50vh]" init="false">
+                        <swiper-slide>
+                            <div class="flex flex-col  w-full">
+                                <div class=" flex  items-center justify-center  w-full">
+                                    <img class="border-2 border-yellow-500 rounded-full h-[10vh] w-[10vh]"
+                                        src="https://bizweb.dktcdn.net/thumb/small/100/346/521/themes/894784/assets/image_1.jpg?1676262120822"
+                                        alt="">
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                                <div class="w-full  flex justify-center">
+                                    <div class="md:w-[80%]  w-full flex justify-center flex-col ">
+                                        <div class="flex flex-col w-full justify-start">
+                                            <img class="w-10 h-10"
+                                                src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                                alt="">
+                                        </div>
+                                        <div class="flex justify-center ">
+                                            <div class="flex flex-col  md:w-[80%] w-full">
+                                                <p class="text-center text-sm ">Tôi rất hài lòng về thái độ phục vụ của quán, cafe đa dạng, bánh ngon và
+                                                    không gian rất đẹp, mình thích sống ảo nên tại đây mình có thể chụp được
+                                                    những tấm ảnh đẹp cùng bạn bè, để hẹn hò cũng rất lãng mạn .</p>
+                                                <p class="text-center text-sm ">
+                                                    Giá cả cũng hợp lý và rẻ lắm đó ạ, để hẹn hò cũng rất lãng mạn
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex  w-full justify-end">
+                                            <img class="w-10 h-10"
+                                                src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide> <div class="flex flex-col  w-full">
+                            <div class=" flex  items-center justify-center  w-full">
+                                <img class="border-2 border-yellow-500 rounded-full h-[10vh] w-[10vh]"
+                                    src="https://bizweb.dktcdn.net/thumb/small/100/346/521/themes/894784/assets/image_1.jpg?1676262120822"
+                                    alt="">
+                                <div>
+
+                                </div>
+
+                            </div>
+                            <div class="w-full  flex justify-center">
+                                <div class="md:w-[80%] w-full flex justify-center flex-col ">
+                                    <div class="flex flex-col w-full justify-start">
+                                        <img class="w-10 h-10"
+                                            src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                            alt="">
+                                    </div>
+                                    <div class="flex justify-center ">
+                                        <div class="flex flex-col  md:w-[80%] w-full">
+                                            <p class="text-center text-sm ">Tôi rất hài lòng về thái độ phục vụ của quán, cafe đa dạng, bánh ngon và
+                                                không gian rất đẹp, mình thích sống ảo nên tại đây mình có thể chụp được
+                                                những tấm ảnh đẹp cùng bạn bè, để hẹn hò cũng rất lãng mạn .</p>
+                                            <p class="text-center text-sm ">
+                                                Giá cả cũng hợp lý và rẻ lắm đó ạ, để hẹn hò cũng rất lãng mạn
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex  w-full justify-end">
+                                        <img class="w-10 h-10"
+                                            src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div></swiper-slide>
+                        <swiper-slide>
+                            <div class="flex flex-col  w-full">
+                                <div class=" flex  items-center justify-center  w-full">
+                                    <img class="border-2 border-yellow-500 rounded-full h-[10vh] w-[10vh]"
+                                        src="https://bizweb.dktcdn.net/thumb/small/100/346/521/themes/894784/assets/image_1.jpg?1676262120822"
+                                        alt="">
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                                <div class="w-full  flex justify-center">
+                                    <div class="md:w-[80%] w-full flex justify-center flex-col ">
+                                        <div class="flex flex-col w-full justify-start">
+                                            <img class="w-10 h-10"
+                                                src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                                alt="">
+                                        </div>
+                                        <div class="flex justify-center ">
+                                            <div class="flex flex-col md:w-[80%] w-full">
+                                                <p class="text-center text-sm ">Tôi rất hài lòng về thái độ phục vụ của quán, cafe đa dạng, bánh ngon và
+                                                    không gian rất đẹp, mình thích sống ảo nên tại đây mình có thể chụp được
+                                                    những tấm ảnh đẹp cùng bạn bè, để hẹn hò cũng rất lãng mạn .</p>
+                                                <p class="text-center text-sm ">
+                                                    Giá cả cũng hợp lý và rẻ lắm đó ạ, để hẹn hò cũng rất lãng mạn
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex  w-full justify-end">
+                                            <img class="w-10 h-10"
+                                                src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/icon_kh.png?1664353170155"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+         
+                    </swiper-container>
+                </div>
+            </div>
+
+            <div class="bg-img w-full flex  items-center justify-center h-[90vh]">
+                <div class="flex md:w-[80%] w-full h-full flex-col justify-center items-center">
+                        <div class="flex  md:flex-row flex-col items-center">
+                                <div class="flex flex-col justify-center items-center md:w-1/3 w-full">
+                                    <p class="text-yellow-500 text-2xl">GIỜ MỞ CỬA</p>
+                                    <div class="flex flex-col">
+                                        <div class="flex flex-col">
+                                            <p class="text-black">Thứ 2 - Thứ 6 hàng tuần</p>
+                                            <p class="text-center">7am - 11am</p>
+                                            <p class="text-center"s>11am - 10pm</p>
+                                        </div>
+                                        <div class="flex flex-col mt-5">
+                                            <p class="text-black">Thứ 7, Chủ nhật hàng tuần</p>
+                                            <p class="text-center">8am - 1 am</p>
+                                            <p class="text-center"s>11am - 9pm</p>
+                                        </div>
+                                        <span class="border-b-2 block border-dotted w-full h-2"></span>
+                                        <div class="flex flex-col mt-2">
+                                            <p class="text-black text-center">Số điện thoại
+                                            </p>
+                                            <p class="text-yellow-500 text-2xl text-center">0329104253</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 w-full relative">
+                                    <img src="https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/banner-hours-book.png?1664353170155" alt="">
+                                    <div class="absolute md:top-[70%]  top-[25vh] justify-end flex w-[80%] ">
+                                    <a class="px-8 py-4   bg-yellow-500 text-white hover:bg-black md:rounded-[200px] rounded-md ">Đặt bàn ngay</a>
+
+                                    </div>
+                                </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<style>
+    /* Custom CSS for hover effects */ 
+    .bg-img{
+        background-image: url('https://bizweb.dktcdn.net/100/346/521/themes/894784/assets/bg_hours_book.jpg?1664353170155');
+    }
+    .img-1 {
+        position: relative;
+        display: inline-block;
+        /* Makes the div shrink-wrap the image */
+    }
+
+    .img-1-1 {
+        display: block;
+        /* Ensures the image takes up the full container */
+        width: 100%;
+        /* Adjust width as needed, or keep it responsive */
+        transition: filter 0.3s ease;
+        /* Smooth transition for the image darkening */
+    }
+
+    .img-1-1::after {
+        content: '\f00e';
+        /* FontAwesome icon unicode */
+        font-family: 'Font Awesome 5 Free';
+        /* Matching the font family used by FontAwesome */
+        font-weight: 900;
+        /* Required for solid icons */
+        border: 2px solid gray;
+        border-radius: 50%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: white;
+        color: black;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        /* Center the icon inside the image */
+        text-align: center;
+        line-height: 40px;
+        opacity: 0;
+        /* Hidden initially */
+        transition: opacity 0.3s ease;
+        /* Smooth transition for opacity */
+    }
+
+    .img-1:hover .img-1-1::after {
+        opacity: 1;
+        /* Show the icon on hover */
+    }
+
+    .img-1:hover .img-1-1 {
+        filter: brightness(0.7);
+        /* Darken the image when hovering */
+    }
+
+    html {
+        background: white;
+        width: 100%;
+    }
+
+    .bg-222722 {
+        background: #222722;
+    }
+
+    .bg-222722 ul:hover>.bg-222722-shaw {
+        display: block;
+    }
+
+    .bg-222722-shaw {
+        box-shadow: 0px 0.3rem 0.3rem 0.3rem;
+        display: none
+    }
+</style>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false, // This ensures that autoplay will not be disabled after user interactions
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
+
+</script>
+<script>
+    const swiperEl = document.querySelector('swiper-container')
+
+    const params = {
+        injectStyles: [`
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #007aff;
+      }
+      `],
+        pagination: {
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+    }
+
+    Object.assign(swiperEl, params)
+
+    swiperEl.initialize();
+</script>
+</body>
+
+</html>
