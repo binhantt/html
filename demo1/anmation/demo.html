@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="">
+        <div class="flex flex-col w-full bg-orange-50 ">
+            <div
+                class="flex text-sm border-orange-800 border-b-2 border-dotted  w-full  py-2  text-lg font-mono	text-red-500  justify-center  md:flex hidden">
+                <div class=" w-[32%]">
+                    Chào mừng bạn đến với ND Gift! Chuyên bán quà tặng, đồ chơi...
+                </div>
+                <div class="flex w-[48%] justify-end pr-3 ">
+                    <div class="px-3 ">
+                        <a class="flex items-center  " href="">
+                            <i class="fa-solid fa-heart px-2"></i>
+                            YÊU THÍCH
+                        </a>
+                    </div>
+                    <div class="px-3 ">
+
+                        <a href="">
+                            <i class="fa-solid fa-shop  px-2 "></i>
+                            CỦA HÀNG
+                        </a>
+                    </div>
+                    <div class=" ">
+
+                        <details class="dropdown ">
+                            <summary class="relative flex items-center">
+                                <i class="fa-solid fa-user px-2"></i>
+
+                                <span class="cursor-pointer">TÀI KHOẢN</span>
+                            </summary>
+                            <ul class=" absolute w-[10%] mt-2 bg-white border border-gray-200 rounded-lg py-1">
+                                <li class="px-4 py-2 hover:bg-gray-100">Đăng nhập </li>
+                                <li class="px-4 py-2 hover:bg-gray-100">Đăng kí </li>
+                            </ul>
+
+                        </details>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col items-center justify-center py-6">
+                <div class="md:w-[34%] w-[80%] md:p-0 px-3">
+                    <img src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/logo.png" alt="">
+                </div>
+                <div class="w-[46%] text-red-300 md:flex hidden font-mono	text-xs flex justify-end ">
+                    <div class="flex items-center mr-[50px]">
+                        <i class="fa-regular fa-calendar-days text-2xl rounded-full  bg-red-200 py-3 px-4 "></i>
+                        <div class="flex flex-col ml-3 	">
+                            <p>T2 - T7: 8h00 - 22h00</p>
+                            <p> Chủ nhật nghỉ</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mr-[50px]">
+                        <i class="fa-solid fa-phone text-2xl rounded-full  bg-red-200 py-3 px-4 "></i>
+                        <div class="flex flex-col ml-3 	">
+                            <p>Bạn cần hỗ trợ?</p>
+                            <p> Gọi ngay 19006750</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-bag-shopping text-2xl rounded-full  bg-red-200 py-3 px-4 "></i>
+                        <div class="flex flex-col ml-3 	">
+                            <p>Giỏ hàng của bạn</p>
+                            <p>(0) sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="text-white w-[95%] px-3 py-5 h-[30px] items-center flex justify-center  mt-6 bg-white flex  rounded-full md:hidden block">
+                    <div class="w-[80%]">
+                        <input type="text" class="w-full" placeholder="seach">
+                    </div>
+                    <div class="w-[20%] flex justify-end">
+                        <button class="rounded-full bg-red-500 px-3 py-1  ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex bg-red-600 p-2 border-y-2 justify-center border-dotted  text-white w-full md:flex hidden">
+            <div class="flex w-[80%] justify-between  items-center	">
+                <ul class="flex items-center justify-between">
+                    <li class="px-4 py-2 hover:bg-red-500 ">
+                        Trang chủ
+                    </li>
+
+                    <li class="px-4 py-2 hover:bg-red-500 ">
+                        Giới thiệu
+                    </li>
+                    <details class="dropdown px-4 py-2 hover:bg-red-500  ">
+                        <summary class="m-1 btn"> Sản phẩm</summary>
+                        <ul class="p-2 grid  grid-cols-3 absolute  bg-white w-[30%] text-black ">
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 1
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 2
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 3
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 4
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 5
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 6
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 7
+                            </li>
+                            <li class="p-2 hover:bg-gray-100">
+                                muc 8
+                            </li>
+                        </ul>
+
+                    </details>
+                    <li class="px-4 py-2 hover:bg-red-500 ">
+                        Tin tức
+
+                    </li>
+                    <li class="px-4 py-2 hover:bg-red-500 ">
+                        Đăng ký gói quà
+
+                    </li>
+                    <li class="px-4 py-2 hover:bg-red-500 ">
+                        Đăng ký Affiliate
+                    </li>
+                </ul>
+                <div class=" rounded-full flex  w-[20%] h-[30px]  bg-white  justify-center  items-center">
+                    <div class="flex w-[80%] p-[2px] ">
+                        <input type="text" class="rounded-l-full w-full h-[30px] pl-2 bg-white" placeholder=" seach  ">
+                    </div>
+                    <div class="flex w-[20%]">
+                        <button class="w-[80%] bg-red-500 rounded-full "> <i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center w-full py-4  ">
+            <div class="w-[90%] md:w-[80%]  md:flex-row flex flex-clo ">
+                <div class="flex w-[40%]  md:flex hidden">
+                    <div class="flex-col w-full flex hidden">
+                        <div class="text-red-500 flex   ">
+                            <div>
+                                Trang chủ
+                            </div>
+                            <div class="px-3">
+                                >
+                            </div>
+                            <div>
+                                tất cả sản phẩm
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[90%]   mt-5 	md:flex hidden">
+                        <div class="flex flex-col font-mono rounded-xl  bg-red-600">
+                            <div
+                                class="flex items-center text-xl font-medium border-dotted  border-b-2	 text-white py-2 px-3">
+                                <i class="fa-solid fa-bars mr-3 "></i>
+                                Danh mục
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p>Set quà tặng</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p>Phụ kiện trang trí</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p>thú bông </p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Quà tặng giáng sinh</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Mèo thần tài</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Mô hình Anime</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Hộp mica</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Hộp mica</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Hộp mica</p>
+                            </div>
+                            <div class="font-medium border-dotted  border-b-2 text-white py-2 px-3">
+                                <p> Hộp mica</p>
+                            </div>
+                            <div class="font-medium  rounded-b-xl text-white py-2 px-3">
+                                <p> Hộp mica</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-white mt-10 justify-center px-10 rounded-xl ">
+                            <div
+                                class="flex justify-center items-center flex-col border-dotted border-b-2 border-black py-9">
+                                <div class="img-ls		">
+                                    <img class="w-[104px]"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/icon_policy_1.png?1705916802667"
+                                        alt="">
+                                </div>
+                                <div class="mt-4 flex flex-col items-center">
+                                    <p class="text-[15px]">Giao hàng toàn quốc</p>
+                                    <p class="text-[13px]">Freeship với hoá đơn trên 500K</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-center items-center flex-col border-dotted border-b-2 border-black py-9">
+                                <div class="img-ls		">
+                                    <img class="w-[104px]"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/icon_policy_2.png?1705916802667"
+                                        alt="">
+                                </div>
+                                <div class="mt-4 flex flex-col items-center">
+                                    <p class="text-[15px]">Sản phẩm chất lượng</p>
+                                    <p class="text-[13px]">Đảm bảo hàng chính hãng</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-center items-center flex-col border-dotted border-b-2 mb-10 border-black py-9">
+                                <div class="img-ls		">
+                                    <img class="w-[104px]"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/icon_policy_3.png?1705916802667"
+                                        alt="">
+                                </div>
+                                <div class="mt-4 flex flex-col items-center">
+                                    <p class="text-[15px]">Ưu đãi siêu hấp dẫn</p>
+                                    <p class="text-[13px] "> Tích điểm đổi quà tặng ưu đãi </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-center hover-center rounded-md p-3 bg-white mt-5">
+                            <a href="">
+                                <img src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/aside_banner_index_img.jpg?1705916802667"
+                                    alt="">
+                            </a>
+
+                        </div>
+                        <div class="flex flex-col justify-center  rounded-md p-3 bg-white mt-5">
+                            <div class="flex flex-col w-full">
+                                <div
+                                    class="text-2xl w-full font-medium text-center font-mono text-red-500 flex flex-col justify-center items-center">
+                                    <a href="">TIN TỨC</a>
+                                    <span class="border-b-2 border-dotted w-[50%] h-full border-red-500 mb-2"></span>
+
+                                </div>
+
+                                <div>
+                                    <img src="https://bizweb.dktcdn.net/thumb/large/100/463/826/articles/t1.jpg?v=1700043729873"
+                                        alt="">
+                                    <div class="text-center text-ls font-medium flex flex-col ">
+                                        <div class="flex flex-col justify-center items-center ">
+                                            <p>Bật mí 5 món Quà Giáng sinh ý nghĩa tán đổ Crush/Quà Giáng sinh tỏ tình
+                                                bạn gái</p>
+                                            <div class="text-gray-300 flex justify-center items-center">
+                                                <i class="fa-solid fa-clock mr-3"></i>
+                                                <p class=" "> Thứ Tư, 15/11/2023</p>
+                                            </div>
+                                            <span
+                                                class="border-b-2 border-dotted w-[80%] h-full border-red-500 my-3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full">
+                                    <div>
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/463/826/articles/t1.jpg?v=1700043729873"
+                                            alt="">
+                                        <div class="text-center text-ls font-medium flex flex-col ">
+                                            <div class="flex flex-col justify-center items-center ">
+                                                <p>Bật mí 5 món Quà Giáng sinh ý nghĩa tán đổ Crush/Quà Giáng sinh tỏ tình
+                                                    bạn gái</p>
+                                                <div class="text-gray-300 flex justify-center items-center">
+                                                    <i class="fa-solid fa-clock mr-3"></i>
+                                                    <p class=" "> Thứ Tư, 15/11/2023</p>
+                                                </div>
+                                                <span
+                                                    class="border-b-2 border-dotted w-[80%] h-full border-red-500 my-3"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full">
+                                    <div>
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/463/826/articles/t1.jpg?v=1700043729873"
+                                            alt="">
+                                        <div class="text-center text-ls font-medium flex flex-col ">
+                                            <div class="flex flex-col justify-center items-center ">
+                                                <p>Bật mí 5 món Quà Giáng sinh ý nghĩa tán đổ Crush/Quà Giáng sinh tỏ tình
+                                                    bạn gái</p>
+                                                <div class="text-gray-300 flex justify-center items-center">
+                                                    <i class="fa-solid fa-clock mr-3"></i>
+                                                    <p class=" "> Thứ Tư, 15/11/2023</p>
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                             
+                                <div class="flex justify-center w-full mt-3 text-white font-mono	font-bold py-3	">
+                                    <button class="rounded-full bg-red-500 px-5 py-3"> XEM THÊM</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col  w-full w-[70%] md:mt-5  ">
+                    <div class="flex flex-col w-full">
+                        <div class="flex flex-col w-full overflow-hidden ">
+                            <div class="mb-4">
+                                <img src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/slider_1.jpg?1705916802667"
+                                    alt="">
+                            </div>
+                            <div class="grid grid-cols-2  ">
+                                <div class="hover:bg-gray-100 hover:break-after-column">
+                                    <div class="relative block overflow-hidden hoverimg">
+                                        <!-- opacity-20 -->
+                                        <a href="">
+                                            <img class="h-full"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_banner_slider_1.jpg?1705916802667"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ml-4 relative block overflow-hidden hoverimg">
+                                    <a href="">
+                                        <img class="h-full"
+                                            src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_banner_slider_1.jpg?1705916802667"
+                                            alt="">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-red-600 rounded-xl py-10 px-5 mt-5 font-mono	md:flex flex-col hidden ">
+                            <div class="flex justify-center text-xl	text-white pb-10">
+                                <p class="text-3xl font-medium	">FLASH SALE MÙA GIÁNG SINH</p>
+                            </div>
+                            <div class="rounded-xl flex border-2 border-white border-dotted p-3 ">
+                                <div class="px-2 py-2 bg-white w-[30%] rounded-xl love ">
+                                    <div class="relative">
+                                        <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                            alt="">
+                                        <div class="absolute top-[0] flex justify-between w-full">
+                                            <div
+                                                class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                <p class="text-white"> 20%</p>
+                                            </div>
+                                            <div
+                                                class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-sm flex flex-col">
+                                        <div class=" mt-2 hover:text-red-500	">
+                                            <a class=" font-extrabold  text-xs" href=""> Bộ đồ chơi lego lắp ráp chủ đề
+                                                Giáng Sinh</a>
+
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="mt-2 w-[70%]">
+                                                <p class="text-base	 text-red-500">2000.000 đ</p>
+                                                <p class="text-sm line-through">
+                                                    250.0000 đ
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 bg-white w-[30%]  rounded-xl ml-5 love">
+                                    <div class="  flex relative">
+                                        <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                            alt="">
+                                        <div class="absolute flex justify-between w-full">
+                                            <div
+                                                class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                <p class="text-white"> 20%</p>
+                                            </div>
+                                            <div
+                                                class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm flex flex-col">
+
+                                        <div class=" mt-2 hover:text-red-500 font-medium ">
+                                            <a class=" font-extrabold  text-xs" href=""> Bộ đồ chơi lego lắp ráp chủ đề
+                                                Giáng Sinh</a>
+
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="mt-2 w-[70%]">
+                                                <p class="text-base	 text-red-500">2000.000 đ</p>
+                                                <p class="text-sm line-through">
+                                                    250.0000 đ
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" bg-white w-[30%] p-2 rounded-xl ml-5">
+                                    <div class="">
+                                        <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                            alt="">
+                                    </div>
+                                    <div class="text-sm flex flex-col">
+
+                                        <div class=" mt-2 hover:text-red-500 font-medium	">
+                                            <a class=" font-extrabold  text-xs" href=""> Bộ đồ chơi lego lắp ráp chủ đề
+                                                Giáng Sinh</a>
+
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="mt-2 w-[70%]">
+                                                <p class="text-base	 text-red-500">2000.000 đ</p>
+                                                <p class="text-sm line-through">
+                                                    250.0000 đ
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" bg-white w-[30%] p-2 rounded-xl ml-5">
+                                    <div class="">
+                                        <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                            alt="">
+                                    </div>
+                                    <div class="text-sm flex flex-col">
+
+                                        <div class=" mt-2 hover:text-red-500 font-medium	">
+                                            <a class=" font-extrabold  text-xs" href=""> Bộ đồ chơi lego lắp ráp chủ đề
+                                                Giáng Sinh</a>
+
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="mt-2 w-[70%]">
+                                                <p class="text-base	 text-red-500">2000.000 đ</p>
+                                                <p class="text-sm line-through">
+                                                    250.0000 đ
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-100 mt-5 md:w-full  rounded-xl shadow-md flex flex-col md:p-4	">
+                            <div
+                                class="flex flex-col justify-center md:p-2 text-2xl font-medium items-center text-red-500  ">
+                                <p class="mb-2"> DANH MỤC NỔI BẬT</p>
+                                <span class="border-b border-dotted w-[22%] border-red-500"></span>
+                            </div>
+                            <div class="flex justify-center py-5 w-full">
+                                <div class=" grid md:grid-cols-6 md:grid-rows-2 grid-cols-3 ">
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+                                    <div class=" flex justify-center flex-col md:ml-10 md:mt-4 ml-2 mt-3">
+                                        <div class="imgnguoc">
+                                            <img class="w-[75px] binhan"
+                                                src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_cate_1.png?1705916802667"
+                                                alt="">
+                                        </div>
+                                        <a class="md:font-mono md:text-sm	md:font-semibold	" href="">Set quà tặng</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-100 mt-5 md:w-full  rounded-xl shadow-md flex flex-col md:p-4">
+                            <div
+                                class="flex flex-col justify-center md:p-2 text-2xl font-medium items-center text-red-500  ">
+                                <p class="mb-2 pt-3"> DANH MỤC NỔI BẬT</p>
+                                <span class="border-b border-dotted w-[22%] border-red-500"></span>
+                            </div>
+                            <div class="flex justify-center w-full ">
+                                <div class="grid md:grid-cols-4 md:w-full grid-cols-2">
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 ml-3  p-3  mr-2 bg-white rounded-xl love ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center w-full mt-3 text-white font-mono	font-bold	py-3">
+                                <button class="rounded-full bg-red-500 px-5 py-3"> XEM THÊM</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-4 ">
+                            <div class=" relative block overflow-hidden hoverimg">
+                                <a href="">
+                                    <img class="h-full"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_three_banner_1.jpg?1705916802667"
+                                        alt="">
+                                </a>
+
+                            </div>
+                            <div class="ml-4 relative block overflow-hidden hoverimg">
+                                <a href="">
+                                    <img class="h-full"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_three_banner_1.jpg?1705916802667"
+                                        alt="">
+                                </a>
+
+                            </div>
+                            <div class="ml-4 relative block overflow-hidden hoverimg">
+                                <a href="">
+                                    <img class="h-full"
+                                        src="https://bizweb.dktcdn.net/100/463/826/themes/933800/assets/img_three_banner_1.jpg?1705916802667"
+                                        alt="">
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="bg-yellow-100 mt-5 md:w-full  rounded-xl shadow-md flex flex-col md:p-4">
+                            <div
+                                class="flex flex-col justify-center md:p-2 text-2xl font-medium items-center text-red-500  ">
+                                <p class="mb-2 pt-3"> TRANG TRÍ GIÁNG SINH</p>
+                                <span class="border-b border-dotted w-[22%] border-red-500"></span>
+                            </div>
+                            <div class="flex justify-center w-full ">
+                                <div class="grid md:grid-cols-4 md:w-full grid-cols-2">
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 ml-3  p-3  mr-2 bg-white rounded-xl love ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" p-3 ml-3 bg-e rounded-xl love mt-2  bg-white  mr-2  ">
+                                        <div class="relative">
+                                            <img src="https://bizweb.dktcdn.net/100/463/826/products/sp5-20796daa-b56e-41cb-8b75-7dafcd458ac2.jpg?v=1700034743170"
+                                                alt="">
+                                            <div class="absolute top-[0] flex justify-between w-full">
+                                                <div
+                                                    class="ml-1 bg-red-500 rounded-[20%] mt-1 w-[50px] h-[20px] h p-2 text-red-500 flex justify-center items-center ">
+                                                    <p class="text-white"> 20%</p>
+                                                </div>
+                                                <div
+                                                    class=" love-1 hidden bg-white rounded-full w-[30px] h-[30px] text-red-500 flex justify-center items-center ">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="text-sm flex flex-col">
+
+                                            <div class=" mt-2 hover:text-red-500 font-medium text-blacxk	">
+                                                <a href=""> Bộ đồ chơi lego lắp ráp chủ đề Giáng Sinh</a>
+
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="mt-2 w-[70%]">
+                                                    <p class="text-base	 text-red-500">2000.000 đ</p>
+
+                                                </div>
+                                                <div
+                                                    class="  rounded-full w-[40px] h-[40px] text-red-500 flex justify-center items-center  border-2 shadow-md shadow-red-500 hover:opacity-60  border-red-500">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 ">
+                                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center w-full mt-3 text-white font-mono	font-bold py-3	">
+                                <button class="rounded-full bg-red-500 px-5 py-3"> XEM THÊM</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<style>
+    .hover-center {
+        position: relative;
+    }
+
+    .hover-center a::before {
+        border-radius: 20%;
+        content: '';
+        position: absolute;
+        top: 50%;
+        /* Position at the vertical center */
+        left: 50%;
+        /* Position at the horizontal center */
+        transform: translate(-50%, -50%);
+        /* Center the pseudo-element */
+        background-color: transparent;
+        transition: all 0.5s ease-out;
+        height: 100%;
+        width: 0;
+    }
+
+    .hover-center a:hover::before {
+        width: 100%;
+        background-color: white;
+        opacity: 0.1;
+    }
+
+    .imgnguoc:hover {
+        transform: scaleX(-1);
+        transition: 0.4s linear;
+        filter: FlipH;
+    }
+
+    .imgnguoc {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+        transition: 0.4s ease-in-out;
+    }
+
+    .hoverimg a::before {
+        background: white;
+        opacity: 0.1;
+        content: '';
+        z-index: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        left: -100%;
+        top: -100%;
+    }
+
+    .hoverimg a::after {
+        background: white;
+        opacity: 0.1;
+        content: '';
+        z-index: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        left: 100%;
+        top: 100%;
+    }
+
+    .hoverimg a:hover::before {
+        top: 0;
+        left: 0;
+    }
+
+    .hoverimg a:hover::after {
+        top: 0;
+        left: 0;
+    }
+
+    .img-ls:hover {
+        transform: scaleX(-1);
+        transition: 0.4s ease-in-out;
+        filter: FlipH;
+    }
+
+    .img-ls {
+        transition: 0.4s ease-in-out;
+    }
+    .love-1{
+        opacity: 0;
+        transition: 0.5s all;
+        display: flex;
+    }
+    .love:hover .love-1 {
+        opacity: 1;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // $('.love').hover(
+    //     function () {
+    //         $('.love-1').removeClass('hidden');
+    //     },
+    //     function () {
+    //         $('.love-1').addClass('hidden');
+    //     }
+    // )
+</script>
+
+</html>
