@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css" integrity="sha512-+oEiKVGJRHutsibRYkkTIfjI0kspDtgJtkIlyPCNTCFCdhy+nSe25nvrCw7UpHPwNbdmNw9AkgGA+ptQxcjPug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
-<body class="w-full h-full">
-    <div class=" h-[100vh] relative" >
-            <div class="w-full h-full flex ">
-                    <div class="absolute  left-[30%] top-[10%]">
-                        <img class="" src="img/Pink Magenta White Modern Online Shop Logo-Photoroom.png-Photoroom.png" alt="">
+
+<body>
+    <div class="w-full h-full ">
+        <div class="w-full flex h-full p-3 justify-center bg-gray-200">
+            <div class="rounded-2xl md:w-[90%] w-full p-6 bg-white flex justify-center  items-center">
+                <div class="p-2 md:w-1/2 md:flex hidden   h-[90vh] ">
+                    <img class="rounded-2xl w-full h-full bg-repeat bg-cover " src="img/thiet-ke-shop-quan-ao-12.jpg"
+                        alt="">
+                </div>
+                <div class="flex flex-col md:w-1/2 w-full justify-center items-center h-full">
+                    <div class="w-[80%] pb-[10vh] pt-6  flex  justify-end">
+                        <p class="mr-2 text-sm text-gray-700"> Not a member? </p>
+                        <a class="text-sm text-blue-700 hover:ring-blue-300" href=""> Regriste now </a>
                     </div>
-                    <div class="w-full hidden md:flex ">
-                        <img class="w-[100%] h-[100vh]" src="img/thiet-ke-shop-quan-ao-12.jpg" alt="">
-                        
+                    <div class="w-full py-8 flex flex-col items-center ">
+                        <div class="text-2xl font-medium  ">
+                            Hello Again !
+                        </div>
+                        <div class="text-md text-gray-500 mt-2   ">
+                            Wellcome back you've ben missed
+                        </div>
                     </div>
-                    <div class="md:absolute md:left-[68%]  md:w-1/3 w-full h-full flex flex-col justify-center items-center bg-blue-200 opacity-95	">
-                        <h1 class=" text-xl w-full text-center mb-4 font-medium text-white">  Đăng nhập </h1>
-                        <form class="w-full flex justify-center flex-col items-center " action="">
-                            <div class="flex w-[80%] mt-4">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md">
-                                    <i class="fa-solid fa-user text-white"></i>
-                                </span>
-                                <input type="text" id="website-admin" class="rounded-none outline-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  " placeholder="elonmusk">
-                              </div>
-                            <div class="flex w-[80%] mt-4">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md">
-                                    <i class="fa-solid fa-key text-white"></i>
-                                </span>
-                                <input type="text" id="website-admin" class="outline-none rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  " placeholder="elonmusk">
-                              </div>
-                              <div class="w-[80%] flex justify-center mt-4">
-                                <button class="button is-fullwidth is-link"> Đăng nhập </button>
-                              </div>
-                        </form>
-                            <div class="flex w-full flex-col items-center text-base text-white justify-center mt-3">
-                                <a class="text-center"  href="">Đăng kí</a>
-                                <a class="text-center" href="">Quên Mật Khẩu </a>
-                            </div>
+                    <div class="w-full h-full flex flex-col items-center ">
+
+                        <div class="md:w-[60%] w-full">
+
+                            <input type="text" id="first_name"
+                                class="bg-gray-50 border outline-none	 border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-5"
+                                placeholder="User Name" required />
+                        </div>
+                        <div class="md:w-[60%] w-full mt-4">
+
+                            <input type="password" id="first_name"
+                                class="bg-gray-50 outline-none	 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-5"
+                                placeholder="Password" required />
+                        </div>
+
+                        <div class="flex justify-end md:w-[60%] w-full py-4">
+                            <a class="text-sm text-blue-700 " href="">Recovery Password </
+           
+         
+                        </div>
+                        <div class="md:w-[50%] w-full justify-center">
+                            <button class="py-4 bg-red-500 w-full rounded-2xl font-medium text-white hover:opacity-90	">
+                                Sign in</button>
+                        </div>
+                        <div class="flex justify-center md:w-[60%] w-full h-5 py-10">
+                            <span class="border-1 "></span>
+                            <span class="text-sm font-medium">------ Or continue with ------- </span>
+                        </div>
+                        <div class="flex justify-center md:w-[60%] w-full h-5 py-4">
+                            <a class="ml-2" href="">
+                                <img class="md:w-[3vw] w-[12vw] hover:bg-gray-200  border rounded-xl p-2 border-gray-200 "
+                                    src="img/facebook.png" alt="">
+                            </a>
+
+                            <a class="ml-2" href="">
+                                <img class="md:w-[3vw]  w-[12vw] hover:bg-gray-200 border rounded-xl p-2 border-gray-200"
+                                    src="img/instagram.png" alt="">
+                            </a>
+                            <a class="ml-2" href="">
+                                <img class="md:w-[3vw]  w-[12vw] hover:bg-gray-200 border rounded-xl p-2 border-gray-2s00"
+                                    src="img/search (1).png" alt="">
+                            </a>
+                        </div>
                     </div>
+                </div>
             </div>
+        </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="md:bg-white bg-yellow-500 shadow-md w-full justify-center items-center flex relative">
+
+        <div class="container w-full px-2 md:py-0 py-6 flex  justify-between items-center">
+            <div class="text-lg font-semibold md:flex hidden ">
+                <a href="#" class="text-gray-800 hover:bg-yellow-500 py-3 px-3 hover:text-white">Home</a>
+                <a href="#" class=" text-gray-800 hover:bg-yellow-500 py-3 px-3  hover:text-white">Men</a>
+                <a href="#" class=" text-gray-800 hover:bg-yellow-500 py-3 px-3  hover:text-white">Women</a>
+                <a href="#" class=" text-gray-800 hover:bg-yellow-500 py-3 px-3  hover:text-white">About</a>
+                <a href="#" class=" text-gray-800 hover:bg-yellow-500 py-3 px-3  hover:text-white">Contact</a>
+            </div>
+            <div class="
+                      menu  md:hidden w-full h-full flex  z-10 menu w-[30%]">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="flex flex-col absolute  w-full menu-ul hidden top-[9vh]" style="top: 9vh; left: 0;">
+                    <li class=" px-4 py-2 hover:opacity-80 bg-white">
+                        san pham 1
+                    </li>
+                    <li class=" px-4 py-2  hover:opacity-80 bg-white">
+                        san pham 2
+                    </li>
+                    <li class=" px-4 py-2  hover:opacity-80 bg-white">
+                        san pham 3
+                    </li>
+                    <li class="px-4 py-2  hover:opacity-80 bg-white">
+                        san pham 4
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center w-full justify-end">
+                <i class="fa-regular fa-money-bill-1 mr-2"></i>
+                <a href="#" class="text-gray-800 mr-8">Cart (0)</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Announcement -->
+    <div class="bg-yellow-500 text-white text-center py-3 md:flex hidden justify-center">
+        25% OFF (ALMOST) EVERYTHING! USE CODE: SUMMERSALE
+    </div>
+
+    <!-- Hero Section -->
+
+    <swiper-container class="mySwiper" autoplay-delay="4000">
+
+        <swiper-slide class="bg-cover bg-center "
+            style="background-image: url('https://preview.colorlib.com/theme/footwear/images/img_bg_1.jpg.webp');height: 80vh ;">
+            <div class="container mx-auto flex items-center justify-center h-full">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-bold mb-4">HUGE SALE</h1>
+                    <p class="text-3xl mb-8">50% OFF</p>
+                    <p class="text-xl mb-8">Big sale sandals</p>
+                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-full hover:opacity-30">SHOP
+                        COLLECTION</a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="bg-cover bg-center "
+            style="background-image: url('https://preview.colorlib.com/theme/footwear/images/img_bg_1.jpg.webp');height: 80vh ;">
+            <div class="container mx-auto flex items-center justify-center h-full">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-bold mb-4">HUGE SALE</h1>
+                    <p class="text-3xl mb-8">50% OFF</p>
+                    <p class="text-xl mb-8">Big sale sandals</p>
+                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-full hover:opacity-30">SHOP
+                        COLLECTION</a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="bg-cover bg-center "
+            style="background-image: url('https://preview.colorlib.com/theme/footwear/images/img_bg_1.jpg.webp');height: 80vh ;">
+            <div class="container mx-auto flex items-center justify-center h-full">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-bold mb-4">HUGE SALE</h1>
+                    <p class="text-3xl mb-8">50% OFF</p>
+                    <p class="text-xl mb-8">Big sale sandals</p>
+                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-full hover:opacity-30">SHOP
+                        COLLECTION</a>
+                </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+    <!-- san pham hot -->
+    <div class="container mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-center mb-12">Sản Phẩm <span class="text-red-600">Hot</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/399/392/products/hi03-t01-1.png"
+                        alt="Woven Throw Pillow" class="w-full h-[50vh] product-image" >
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Woven Throw Pillow</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$30.1</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card relative">
+                <div class="overflow-hidden h-[50%]">
+                    <img src="https://www.themelooks.net/demo/kinen/html/preview/assets/img/product/product-1.jpg"
+                        alt="Copley Dining Chair" class="w-full  product-image" style="height: 50vh;">
+                    <span
+                        class="absolute top-4 right-4 bg-orange-500 text-white rounded-full px-2 py-1 text-xs">-20%</span>
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Copley Dining Chair</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$24.1</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300x300" alt="Women's Flexible Bottom Shoes"
+                        class="w-full h-auto product-image" style="height: 50vh;">
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Women's Flexible Bottom Shoes</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$32</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300x300" alt="Women's Strap Sandal"
+                        class="w-full h-auto product-image" style="height: 50vh;">
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Women's Strap Sandal</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$10</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <button class="bg-black text-white px-10 py-4 rounded-md hover:opacity-60"> Xem Thêm</button>
+        </div>
+    </div>
+    <h1 class="text-2xl text-yellow-500 text-center font-semibold "> Sản Phẩm bán chạy</h1>
+    <swiper-container class="mySwiper flex md:flex-rows flex-col justify-center">
+
+        <swiper-slide class="flex p-6 md:flex-row flex-col justify-center items-center">
+            <!-- Sneaker Image -->
+            <div class="flex md:w-2/4 w-full  justify-center  ">
+                <img src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-home-about-image.jpg"
+                    alt="Sneaker" class=" rounded-lg shadow-lg" style="width: 60%;">
+            </div>
+            <!-- Text Content -->
+            <div class="flex md:w-1/5 w-full flex-col justify-start ">
+                <h1 class="text-base font-semibold mb-4 text-yellow-500">About Us</h1>
+                <h1 class="text-2xl font-semibold mb-4 ">Selected materials designed for comfort and sustainability</h1>
+                <p class="text-gray-600">Our sneakers are crafted using sustainable materials and expert craftsmanship.
+                    Experience ultimate comfort and style.</p>
+                <a href="#" class="mt-4 flex flex-col">
+                    READ MORE
+                    <span class="border-2 border-yellow-500 ]" style="width: 100px;"></span>
+                </a>
+            </div>
+
+        </swiper-slide>
+        <swiper-slide class="flex p-6 md:flex-row flex-col justify-center items-center">
+            <!-- Sneaker Image -->
+            <div class="flex md:w-2/4 w-full  justify-center  ">
+                <img src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-home-about-image.jpg"
+                    alt="Sneaker" class=" rounded-lg shadow-lg" style="width: 60%;">
+            </div>
+            <!-- Text Content -->
+            <div class="flex md:w-1/5 w-full flex-col justify-start ">
+                <h1 class="text-base font-semibold mb-4 text-yellow-500">About Us</h1>
+                <h1 class="text-2xl font-semibold mb-4 ">Selected materials designed for comfort and sustainability</h1>
+                <p class="text-gray-600">Our sneakers are crafted using sustainable materials and expert craftsmanship.
+                    Experience ultimate comfort and style.</p>
+                <a href="#" class="mt-4 flex flex-col">
+                    READ MORE
+                    <span class="border-2 border-yellow-500 ]" style="width: 100px;"></span>
+                </a>
+            </div>
+
+        </swiper-slide>
+        <swiper-slide class="flex p-6 md:flex-row flex-col justify-center items-center">
+            <!-- Sneaker Image -->
+            <div class="flex md:w-2/4 w-full  justify-center  ">
+                <img src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-home-about-image.jpg"
+                    alt="Sneaker" class=" rounded-lg shadow-lg" style="width: 60%;">
+            </div>
+            <!-- Text Content -->
+            <div class="flex md:w-1/5 w-full flex-col justify-start ">
+                <h1 class="text-base font-semibold mb-4 text-yellow-500">About Us</h1>
+                <h1 class="text-2xl font-semibold mb-4 ">Selected materials designed for comfort and sustainability</h1>
+                <p class="text-gray-600">Our sneakers are crafted using sustainable materials and expert craftsmanship.
+                    Experience ultimate comfort and style.</p>
+                <a href="#" class="mt-4 flex flex-col">
+                    READ MORE
+                    <span class="border-2 border-yellow-500 ]" style="width: 100px;"></span>
+                </a>
+            </div>
+
+        </swiper-slide>
+        <swiper-slide class="flex p-6 md:flex-row flex-col justify-center items-center">
+            <!-- Sneaker Image -->
+            <div class="flex md:w-2/4 w-full  justify-center  ">
+                <img src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-home-about-image.jpg"
+                    alt="Sneaker" class=" rounded-lg shadow-lg" style="width: 60%;">
+            </div>
+            <!-- Text Content -->
+            <div class="flex md:w-1/5 w-full flex-col justify-start ">
+                <h1 class="text-base font-semibold mb-4 text-yellow-500">About Us</h1>
+                <h1 class="text-2xl font-semibold mb-4 ">Selected materials designed for comfort and sustainability</h1>
+                <p class="text-gray-600">Our sneakers are crafted using sustainable materials and expert craftsmanship.
+                    Experience ultimate comfort and style.</p>
+                <a href="#" class="mt-4 flex flex-col">
+                    READ MORE
+                    <span class="border-2 border-yellow-500 ]" style="width: 100px;"></span>
+                </a>
+            </div>
+
+        </swiper-slide>
+    </swiper-container>
+
+
+    <div class="container mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-center mb-12">Danh Sách <span class="text-yellow-500">Sản Phẩm</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300x300" alt="Product 1" class="w-full  product-image" style="height: 50vh;">
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Sản Phẩm 1</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$30.1</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card relative">
+                <div class="overflow-hidden h-[50%]">
+                    <img src="https://via.placeholder.com/300x300" alt="Product 2" class="w-full product-image" style="height: 50vh;">
+                    <span class="absolute top-4 right-4 bg-orange-500 text-white rounded-full px-2 py-1 text-xs">-20%</span>
+                </div>  
+                <h2 class="mt-4 text-xl font-semibold">Sản Phẩm 2</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$24.1</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300x300" alt="Product 3" class="w-full product-image" style="height: 50vh;">
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Sản Phẩm 3</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$32</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300x300" alt="Product 4" class="w-full h-auto product-image" style="height: 50vh;">
+                </div>
+                <h2 class="mt-4 text-xl font-semibold">Sản Phẩm 4</h2>
+                <div class="flex items-center mt-2">
+                    <p class="text-gray-600 mr-2">$10</p>
+                    <div class="text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <button class="bg-black text-white px-10 py-4 rounded-md hover:opacity-60"> Xem Thêm</button>
+        </div>
+    </div>
+    <!-- hoat dong -->
+    <div class="container mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-center mb-12">Cách hoạt động</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <!-- Step 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex justify-center items-center w-20 h-20 mx-auto bg-gray-100 rounded-full mb-4">
+                    <i class="img-i fas fa-box-open text-4xl text-gray-700"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-2">01</h2>
+                <h3 class="text-lg font-semibold mb-4">Chọn hộp quà</h3>
+                <p class="text-gray-600">Tôi là đoạn văn. Nhấp vào đây để thêm văn bản và chỉnh sửa.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex justify-center items-center w-20 h-20 mx-auto bg-gray-100 rounded-full mb-4">
+                    <i class="img-i fas fa-list text-4xl text-gray-700"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-2">02</h2>
+                <h3 class="text-lg font-semibold mb-4">Chọn gói đăng ký</h3>
+                <p class="text-gray-600">Tôi là đoạn văn. Nhấp vào đây để thêm văn bản và chỉnh sửa.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex justify-center items-center w-20 h-20 mx-auto bg-gray-100 rounded-full mb-4">
+                    <i class="img-i fas fa-truck text-4xl text-gray-700"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-2">03</h2>
+                <h3 class="text-lg font-semibold mb-4">Nhận quà hàng tháng</h3>
+                <p class="text-gray-600">Tôi là đoạn văn. Nhấp vào đây để thêm văn bản và chỉnh sửa.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+       <!-- Footer -->
+       <footer class="bg-yellow-500 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <!-- Contact Info -->
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>123 Main Street, Anytown, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone mr-2"></i>(123) 456-7890</p>
+                    <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                </div>
+                <!-- Useful Links -->
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-4">Useful Links</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-white hover:text-gray-400">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white hover:text-gray-400">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white hover:text-gray-400">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-white hover:text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Social Links -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
+                    <div class="flex">
+                        <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white-700 mt-6 pt-6">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-white">&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    .img-i:hover{
+        transform: rotateY(180deg);
+       transition: 0.4s ease-in-out;
+         
+    }
+    .img-i{
+        transition: 0.4s ease-in-out;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.menu').click(function () {
+            $('.menu-ul').toggleClass("hidden");
+        });
+    });
+
+
+</script>
+
+</html>
